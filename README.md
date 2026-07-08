@@ -1,12 +1,12 @@
 # ohos-bst-light
 
-`binary-sign-tool` 轻量重写版 —— 基于 `binary-sign-tool` 开源代码逆向分析出二进制自签名算法后，用 C 语言和 Python 各重写一份签名工具实现，不依赖官方源码、不依赖 openssl / cJSON / elfio。
+`binary-sign-tool` 轻量重写版 —— 基于 `binary-sign-tool` 开源代码逆向分析出二进制自签名算法后，用 C 语言和 Python 各重写一份签名工具实现。
 
 ## 用法
 
 ```sh
 # C 语言版
-gcc self-sign.c -o self-sign           # 需先构建后使用，支持 gcc 和 clang
+gcc self-sign.c -o self-sign           # 需编译后使用，支持 gcc 和 clang
 ./self-sign <input_file>               # 对原始文件进行签名
 ./self-sign <input_file> <output_file> # 签名后保存到新文件
 
